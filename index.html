@@ -38,11 +38,84 @@
         </div>
         <main class="main">
             <div class="filter">
-                <div class="price"><p class="filterP">Price</p></div>
-                <div class="color"><p class="filterP">Color</p></div>
-                <div class="color"><p class="filterP">Memory</p></div>
-                <div class="color"><p class="filterP">OS</p></div>
-                <div class="color"><p class="filterP">Dysplay</p></div>
+                <div id="menu01" class="filtermenu" style ="border: 1px black solid; border-radius: 15px; padding: 5px 10px">
+                    <div id="menu01head" style="display: flex; justify-content: space-between;"><p>Price</p><img src="icons/arrow_left.svg" alt=""></div>
+                    <div id="menu01filter" style="border-top: 1px black solid;;" >
+                        <form id="menu01form">
+                            <div  style="display: flex; justify-content: space-between; align-items: baseline;">
+                                <p>From</p>
+                                <input type="text" style="height: 20px">
+                            </div>
+                            <div  style="display: flex; justify-content: space-between; align-items: baseline;">
+                                <p>to</p>
+                                <input type="text" style="height: 20px">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="menu02" class="filtermenu" style ="border: 1px black solid; border-radius: 15px; padding: 5px 10px">
+                    <div id="menu02head" style="display: flex; justify-content: space-between; "><p>Price</p><img src="icons/arrow_left.svg" alt=""></div>
+                    <div id="menu02filter" style="display: flex; flex-wrap: wrap; justify-content: space-around; max-height: 200px; border-top: 1px black solid; ;">
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center;"><input id="Red" type="checkbox"><p>Red</p></div>
+                            <div style="display: flex; align-items: center;"><input id="Black" type="checkbox"><p>Black</p></div>
+                            <div style="display: flex; align-items: center;"><input id="Blue" type="checkbox"><p>Blue</p></div>
+                            <div style="display: flex; align-items: center;"><input id="Gold"type="checkbox"><p>Gold</p></div>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center;"><input id="Green" type="checkbox"><p>Green</p></div>
+                            <div style="display: flex; align-items: center;"><input id="White" type="checkbox"><p>White</p></div>
+                            <div style="display: flex; align-items: center;"><input id="Grey" type="checkbox"><p>Grey</p></div>
+                            <div style="display: flex; align-items: center;"><input id="Yellow"type="checkbox"><p>Yellow</p></div>  
+                        </div>    
+                        
+                            
+                    </div>
+                </div>
+                <div id="menu03" class="filtermenu" style ="border: 1px black solid; border-radius: 15px; padding: 5px 10px">
+                    <div id="menu03head" style="display: flex; justify-content: space-between; "><p>Memory</p><img src="icons/arrow_left.svg" alt=""></div>
+                    <div id="menu03filter" style="display: flex; flex-wrap: wrap; justify-content: space-around; max-height: 200px; border-top: 1px black solid; ;">
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center;"><input id="32Gb" type="checkbox"><p>32 Gb</p></div>
+                            <div style="display: flex; align-items: center;"><input id="64GB" type="checkbox"><p>64 GB</p></div>
+                            <div style="display: flex; align-items: center;"><input id="128Gb" type="checkbox"><p>128 Gb</p></div>
+                            <div style="display: flex; align-items: center;"><input id="256Gb"type="checkbox"><p>256 Gb</p></div>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center;"><input id="512Gb" type="checkbox"><p>512 Gb</p></div>
+                            <div style="display: flex; align-items: center;"><input id="1Tb" type="checkbox"><p>1 Tb</p></div>
+                            <div style="display: flex; align-items: center;"><input id="2Tb" type="checkbox"><p>2 Tb</p></div>
+                            <div style="display: flex; align-items: center;"><input id="4Tb"type="checkbox"><p>4 Tb</p></div>  
+                        </div>    
+                        
+                            
+                    </div>
+                </div>
+                <div id="menu04" class="filtermenu" style ="border: 1px black solid; border-radius: 15px; padding: 5px 10px">
+                    <div id="menu04head" style="display: flex; justify-content: space-between; "><p>OS</p><img src="icons/arrow_left.svg" alt=""></div>
+                    <div id="menu04filter" style="display: flex; flex-wrap: wrap; justify-content: space-around; max-height: 200px; border-top: 1px black solid; ;">
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center;"><input id="IOS" type="checkbox"><p>IOS</p></div>
+                            <div style="display: flex; align-items: center;"><input id="MacOS" type="checkbox"><p>Mac OS</p></div>
+                            <div style="display: flex; align-items: center;"><input id="tvOS" type="checkbox"><p>tv OS</p></div>
+                            <div style="display: flex; align-items: center;"><input id="WatchOS"type="checkbox"><p>Watch OS</p></div>
+                        </div> 
+                            
+                    </div>
+                </div>
+                <div id="menu05" class="filtermenu" style ="border: 1px black solid; border-radius: 15px; padding: 5px 10px">
+                    <div id="menu05head" style="display: flex; justify-content: space-between; "><p>Display</p><img src="icons/arrow_left.svg" alt=""></div>
+                    <div id="menu05filter" style="display: flex; flex-wrap: wrap; justify-content: space-around; max-height: 250px; border-top: 1px black solid; ;">
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center;"><input id="t5" type="checkbox"><p>2-5 inch</p></div>
+                            <div style="display: flex; align-items: center;"><input id="f5t7" type="checkbox"><p>5-7 inch</p></div>
+                            <div style="display: flex; align-items: center;"><input id="f7t12" type="checkbox"><p>7-12 inch</p></div>
+                            <div style="display: flex; align-items: center;"><input id="f12t16"type="checkbox"><p>12-16 inch</p></div>
+                            <div style="display: flex; align-items: center;"><input id="f16"type="checkbox"><p>16+ inch</p></div>
+                        </div> 
+                            
+                    </div>
+                </div>
             </div>
             <div class="items">
                 <!-- <div class="item">
@@ -66,6 +139,7 @@
 
     </div>
     <script src="script01.js"></script>
+    <script src="filterMenu.js"></script>
 </body>
 </html>
 
