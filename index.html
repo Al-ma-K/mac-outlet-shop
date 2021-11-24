@@ -39,8 +39,8 @@
         <main class="main">
             <div class="filter">
                 <div id="menu01" class="filtermenu" style ="border: 1px black solid; border-radius: 15px; padding: 5px 10px">
-                    <div id="menu01head" style="display: flex; justify-content: space-between;"><p>Price</p><img src="icons/arrow_left.svg" alt=""></div>
-                    <div id="menu01filter" style="border-top: 1px black solid;;" >
+                    <div id="menu01head" style="display: flex; justify-content: space-between;"><p>Price</p><img src="icons/arrow_left.svg" onclick="func01(this)" alt=""></div>
+                    <div id="menu01filter" style="border-top: 1px black solid;display: none;" >
                         <form id="menu01form">
                             <div  style="display: flex; justify-content: space-between; align-items: baseline;">
                                 <p>From</p>
@@ -54,9 +54,9 @@
                     </div>
                 </div>
                 <div id="menu02" class="filtermenu" style ="border: 1px black solid; border-radius: 15px; padding: 5px 10px">
-                    <div id="menu02head" style="display: flex; justify-content: space-between; "><p>Price</p><img src="icons/arrow_left.svg" alt=""></div>
-                    <div id="menu02filter" style="display: flex; flex-wrap: wrap; justify-content: space-around; max-height: 200px; border-top: 1px black solid; ;">
-                        <div style="display: flex; flex-direction: column;">
+                    <div id="menu02head" style="display: flex; justify-content: space-between; "><p>Price</p><img src="icons/arrow_left.svg" onclick="func02(this)" alt="" ></div>
+                    <div id="menu02filter" style="display: none; flex-wrap: wrap; justify-content: space-around; max-height: 200px; border-top: 1px black solid; ;">
+                        <div style="display: flex; flex-direction: column; ">
                             <div style="display: flex; align-items: center;"><input id="Red" type="checkbox"><p>Red</p></div>
                             <div style="display: flex; align-items: center;"><input id="Black" type="checkbox"><p>Black</p></div>
                             <div style="display: flex; align-items: center;"><input id="Blue" type="checkbox"><p>Blue</p></div>
@@ -73,8 +73,8 @@
                     </div>
                 </div>
                 <div id="menu03" class="filtermenu" style ="border: 1px black solid; border-radius: 15px; padding: 5px 10px">
-                    <div id="menu03head" style="display: flex; justify-content: space-between; "><p>Memory</p><img src="icons/arrow_left.svg" alt=""></div>
-                    <div id="menu03filter" style="display: flex; flex-wrap: wrap; justify-content: space-around; max-height: 200px; border-top: 1px black solid; ;">
+                    <div id="menu03head" style="display: flex; justify-content: space-between; "><p>Memory</p><img src="icons/arrow_left.svg" onclick="func02(this)" alt=""></div>
+                    <div id="menu03filter" style="display: none; flex-wrap: wrap; justify-content: space-around; max-height: 200px; border-top: 1px black solid; ;">
                         <div style="display: flex; flex-direction: column;">
                             <div style="display: flex; align-items: center;"><input id="32Gb" type="checkbox"><p>32 Gb</p></div>
                             <div style="display: flex; align-items: center;"><input id="64GB" type="checkbox"><p>64 GB</p></div>
@@ -92,8 +92,8 @@
                     </div>
                 </div>
                 <div id="menu04" class="filtermenu" style ="border: 1px black solid; border-radius: 15px; padding: 5px 10px">
-                    <div id="menu04head" style="display: flex; justify-content: space-between; "><p>OS</p><img src="icons/arrow_left.svg" alt=""></div>
-                    <div id="menu04filter" style="display: flex; flex-wrap: wrap; justify-content: space-around; max-height: 200px; border-top: 1px black solid; ;">
+                    <div id="menu04head" style="display: flex; justify-content: space-between; "><p>OS</p><img src="icons/arrow_left.svg" onclick="func02(this)" alt=""></div>
+                    <div id="menu04filter" style="display: none; flex-wrap: wrap; justify-content: space-around; max-height: 200px; border-top: 1px black solid; ;">
                         <div style="display: flex; flex-direction: column;">
                             <div style="display: flex; align-items: center;"><input id="IOS" type="checkbox"><p>IOS</p></div>
                             <div style="display: flex; align-items: center;"><input id="MacOS" type="checkbox"><p>Mac OS</p></div>
@@ -104,8 +104,8 @@
                     </div>
                 </div>
                 <div id="menu05" class="filtermenu" style ="border: 1px black solid; border-radius: 15px; padding: 5px 10px">
-                    <div id="menu05head" style="display: flex; justify-content: space-between; "><p>Display</p><img src="icons/arrow_left.svg" alt=""></div>
-                    <div id="menu05filter" style="display: flex; flex-wrap: wrap; justify-content: space-around; max-height: 250px; border-top: 1px black solid; ;">
+                    <div id="menu05head" style="display: flex; justify-content: space-between; "><p>Display</p><img src="icons/arrow_left.svg" onclick="func02(this)" alt=""></div>
+                    <div id="menu05filter" style="display: none; flex-wrap: wrap; justify-content: space-around; max-height: 250px; border-top: 1px black solid; ;">
                         <div style="display: flex; flex-direction: column;">
                             <div style="display: flex; align-items: center;"><input id="t5" type="checkbox"><p>2-5 inch</p></div>
                             <div style="display: flex; align-items: center;"><input id="f5t7" type="checkbox"><p>5-7 inch</p></div>
