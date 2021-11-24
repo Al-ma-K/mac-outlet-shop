@@ -1,17 +1,23 @@
 
 function create (item)
 {
+    let id = item.id;
     let itemName = item.name;
     let itemPrice = item.price;
     let inStock = item.orderInfo.inStock;
+    let inStockLink = "img/icons/like_green.svg";
+    if (inStock == 0){
+        inStockLink = "img/icons/close.svg";
+    }
+    
     let link = item.imgUrl;
     let insert = `
-    <div class="item">
+    <div class="item" id = "${id}">
                     <div class="item-fields">
                         <div class="item_photo"><img src="${link}" alt=""></div>
                         <div class="item_name">${itemName}</div>
                         <div class="item_left">
-                            <img src="img/icons/close.svg" alt="">
+                            <img src=${inStockLink} alt="">
                             <p> ${inStock} left in stock</p>   
                         </div>
                         <div class="item_price">Price: ${itemPrice}</div>

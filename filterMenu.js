@@ -20,7 +20,6 @@ function func01(e){
 // 4dispFlex
 function func02(e){
     let targNode = e.parentNode.parentNode.id;
-    console.log(e.parentNode.parentNode.id)
     let targ = targNode + 'filter';
     let a = document.getElementById(targ);
 
