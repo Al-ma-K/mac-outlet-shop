@@ -23,7 +23,7 @@ parent.onclick = function(event){
             console.log(`${tmpName}==${tmpPrice}==${tmpDisplay}==${tmpimg} `)
             }    
     }
-    console.log(`${tmpName}==${tmpPrice}==${tmpDisplay}==${tmpRam}gb `)
+    console.log(`${tmpName}==${tmpPrice}$==${tmpDisplay}inches==${tmpRam}gb `)
 
 
     // let popUpWrap = document.querySelector('#popUpWrap')
