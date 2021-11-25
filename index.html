@@ -9,7 +9,16 @@
     <script src="js/items.js"></script>
     <title>MacOutlet</title>
 </head>
-<body>
+<body>    
+
+    <div id="popUpWrap" style=" display: none; position: fixed; top:0; height: 100vh; width: 100vw;  z-index: 100;">
+        <div class="popUp" style="display: flex; flex-direction: column; left: 0;top: 0; width: 100%; height: 100%;">
+            <div class="out" style="background: grey; opacity: 50%; height: 20%; width: 100vw; border: black 1px solid;"></div>
+            <div id="popUpInfo" style="background: white; height: 60%; width: 100vw; border: black 1px solid;"></div>
+            <div class="out" style="background: grey; opacity: 50%; height: 20%; width: 100vw; border: black 1px solid;"></div>
+        </div>
+    </div>
+
     <script src="js/items.js"></script>
     <div class="wrapper">
         
@@ -140,6 +149,7 @@
     </div>
     <script src="script01.js"></script>
     <script src="filterMenu.js"></script>
+    <script src="infoModal.js"></script>
 </body>
 </html>
 
